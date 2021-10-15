@@ -1,56 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React, {useEffect} from 'react';
+import s from './App.module.scss';
+import {gamesAPI} from "./app/api/gamesAPI";
+import {useDispatch, useSelector} from "react-redux";
+import {get_all_games, select_all_games} from "./app/store/slices/gamesSlice";
+import {select_theme} from "./app/store/slices/configSlice";
+import Header from "./app/components/Header";
 
 function App() {
+  const dispatch = useDispatch();
+  const all_games = useSelector(select_all_games)
+  const theme = useSelector(select_theme)
+
+  useEffect(()=> {
+      dispatch(get_all_games())
+  }, [])
+
+  useEffect(() => {
+    console.log(all_games)
+  }, [all_games])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div style={theme === 'dark' ? {backgroundColor: '#151515', color: '#fff'} : {backgroundColor: '#fff', color: '#000'}}  className={s.app}>
+      <Header/>
     </div>
   );
 }

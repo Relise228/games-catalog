@@ -1,0 +1,84 @@
+@import "./variables.scss";
+
+.header {
+  height: calc(#{$page-height} - #{$content-height});
+  display: flex;
+
+  &_logo{
+    flex: 0 1 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    background-image: linear-gradient(to right, #ee0979, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
+    a {
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-image: linear-gradient(to right, #00c3ff, #ffff1c);
+    }
+  }
+  &_search {
+    flex: 2 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &_icon {
+      width:25px;
+      position: absolute;
+      left: 8px;
+
+      &_dark {
+        filter:  brightness(100%);
+      }
+    }
+    input {
+      background-color: hsla(0,0%,100%,.16);
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 45px;
+      border-radius: 40px;
+      padding: 0 40px;
+      font-weight: bold;
+      transition: background-color 0.5s linear;
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+
+  &_buttons {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      cursor: pointer;
+    }
+    p {
+      cursor: pointer;
+    }
+  }
+
+  &_profile {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  &_plus_notification {
+    width: 20px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(228deg) brightness(110%) contrast(101%);
+  }
+}
