@@ -1,0 +1,78 @@
+.slider {
+  height: 95%;
+  //width: 75vw;
+  object-fit: contain;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1 1 auto;
+  align-self: center;
+  margin: 0 20px;
+  border: none;
+
+  color: white;
+  position: relative;
+
+
+  &_description {
+    background-color: #202020;
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+    min-height: 150px;
+    border-radius: 0 30px 30px 0;
+    padding: 10px 30px 10px 10px;
+    -webkit-transition: width 1s ease-in-out;
+
+
+    &_platforms {
+      padding-top: 20px;
+    }
+    &_rating {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      padding: 2px 0;
+      min-width: 32px;
+      border-radius: 4px;
+      border: 1px solid;
+    }
+    p {
+      font-weight: 300;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+
+  &_buttons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &_dot {
+      width: 15px;
+      height: 15px;
+      margin-top: 8px;
+      background-color: #202020;
+      border-radius: 50%;
+      z-index: 2;
+      transition: background-color 0.5s ease-in-out;
+      cursor: pointer;
+      &:first-child {
+        margin-top: 0;
+      }
+      &_active {
+        background-color: #fff;
+      }
+    }
+  }
+
+
+}

@@ -11,5 +11,5 @@ const instance = axios.create({
 
 
 export const gamesAPI = {
-  getAllGames: () => instance.get(`games?key=${API_KEY}`).then(response => response.data),
+  getAllGames: () => instance.get(`games?key=${API_KEY}&page_size=10`).then(response => response.data),
 }
