@@ -18,7 +18,7 @@ export default () => {
     return <div className={s.header}>
         <div className={s.header_logo}>
             <BrowserRouter>
-                <Link to={'/'}>GAMES</Link>
+                <Link to={'/games-catalog/'}>GAMES</Link>
             </BrowserRouter>
         </div>
         <div className={s.header_search}>
