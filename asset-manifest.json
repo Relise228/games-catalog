@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/games-catalog/static/css/main.20a11394.chunk.css",
-    "main.js": "/games-catalog/static/js/main.c19f6239.chunk.js",
-    "main.js.map": "/games-catalog/static/js/main.c19f6239.chunk.js.map",
+    "main.css": "/games-catalog/static/css/main.e022f64e.chunk.css",
+    "main.js": "/games-catalog/static/js/main.e8795f4f.chunk.js",
+    "main.js.map": "/games-catalog/static/js/main.e8795f4f.chunk.js.map",
     "runtime-main.js": "/games-catalog/static/js/runtime-main.a9802584.js",
     "runtime-main.js.map": "/games-catalog/static/js/runtime-main.a9802584.js.map",
-    "static/js/2.10bb6b50.chunk.js": "/games-catalog/static/js/2.10bb6b50.chunk.js",
-    "static/js/2.10bb6b50.chunk.js.map": "/games-catalog/static/js/2.10bb6b50.chunk.js.map",
+    "static/js/2.d0b72b45.chunk.js": "/games-catalog/static/js/2.d0b72b45.chunk.js",
+    "static/js/2.d0b72b45.chunk.js.map": "/games-catalog/static/js/2.d0b72b45.chunk.js.map",
     "index.html": "/games-catalog/index.html",
-    "static/css/main.20a11394.chunk.css.map": "/games-catalog/static/css/main.20a11394.chunk.css.map",
-    "static/js/2.10bb6b50.chunk.js.LICENSE.txt": "/games-catalog/static/js/2.10bb6b50.chunk.js.LICENSE.txt",
+    "static/css/main.e022f64e.chunk.css.map": "/games-catalog/static/css/main.e022f64e.chunk.css.map",
+    "static/js/2.d0b72b45.chunk.js.LICENSE.txt": "/games-catalog/static/js/2.d0b72b45.chunk.js.LICENSE.txt",
+    "static/media/bar-graph-svgrepo-com.bbbee2a4.svg": "/games-catalog/static/media/bar-graph-svgrepo-com.bbbee2a4.svg",
+    "static/media/crown-svgrepo-com.99ac471b.svg": "/games-catalog/static/media/crown-svgrepo-com.99ac471b.svg",
+    "static/media/cup-svgrepo-com.c20a4e68.svg": "/games-catalog/static/media/cup-svgrepo-com.c20a4e68.svg",
+    "static/media/fire-svgrepo-com.f3277147.svg": "/games-catalog/static/media/fire-svgrepo-com.f3277147.svg",
+    "static/media/folders.778a4e44.svg": "/games-catalog/static/media/folders.778a4e44.svg",
+    "static/media/next-svgrepo-com.3b4a1eea.svg": "/games-catalog/static/media/next-svgrepo-com.3b4a1eea.svg",
     "static/media/notification.bc7b056a.svg": "/games-catalog/static/media/notification.bc7b056a.svg",
+    "static/media/people.2f04e5b8.svg": "/games-catalog/static/media/people.2f04e5b8.svg",
     "static/media/plus.0f2ac91b.svg": "/games-catalog/static/media/plus.0f2ac91b.svg",
+    "static/media/present.eafe2d2a.svg": "/games-catalog/static/media/present.eafe2d2a.svg",
     "static/media/profile.27f26e5c.jpg": "/games-catalog/static/media/profile.27f26e5c.jpg",
-    "static/media/search.129397a5.svg": "/games-catalog/static/media/search.129397a5.svg"
+    "static/media/search.129397a5.svg": "/games-catalog/static/media/search.129397a5.svg",
+    "static/media/star-svgrepo-com.59a3c4f1.svg": "/games-catalog/static/media/star-svgrepo-com.59a3c4f1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a9802584.js",
-    "static/js/2.10bb6b50.chunk.js",
-    "static/css/main.20a11394.chunk.css",
-    "static/js/main.c19f6239.chunk.js"
+    "static/js/2.d0b72b45.chunk.js",
+    "static/css/main.e022f64e.chunk.css",
+    "static/js/main.e8795f4f.chunk.js"
   ]
 }
