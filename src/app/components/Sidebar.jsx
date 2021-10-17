@@ -19,8 +19,8 @@ export default () => {
     return <div className={s.sidebar} >
         <aside>
             <nav className={s.sidebar_nav}>
-                <div className={s.sidebar_nav_main}><Link to='/'>Home</Link></div>
-                <div className={s.sidebar_nav_main}><Link to='/reviews'>Reviews</Link></div>
+                <div className={s.sidebar_nav_main}><Link to='/games-catalog/'>Home</Link></div>
+                <div className={s.sidebar_nav_main}><Link to='/games-catalog/reviews'>Reviews</Link></div>
                 <div className={s.sidebar_nav_main}>
                     <div className={s.sidebar_nav_sub}>
                         <div className={s.sidebar_nav_sub_header}>
@@ -30,13 +30,13 @@ export default () => {
                         </div>
                         <div className={s.sidebar_nav_sub_list}>
                             <ul>
-                                <li><Link to={'/wishlist'}>
+                                <li><Link to={'/games-catalog/wishlist'}>
                                     <div><img src={presentImage} alt="present"/></div>
                                     Wishlist</Link></li>
-                                <li><Link to={'/wishlist'}>
+                                <li><Link to={'/games-catalog/library'}>
                                     <div><img src={folderImage} alt="folders"/></div>
                                     My library</Link></li>
-                                <li><Link to={'/wishlist'}>
+                                <li><Link to={'/games-catalog/followed-people'}>
                                     <div><img src={peopleImage} alt="people"/></div>
                                     People you follow</Link></li>
                             </ul>
@@ -46,16 +46,16 @@ export default () => {
                         <div>New Releases</div>
                         <div className={s.sidebar_nav_sub_list}>
                             <ul>
-                                <li><Link to={'/last'}>
+                                <li><Link to={'/games-catalog/last'}>
                                     <div><img src={starImage} alt="star"/></div>
                                     Last 30 days</Link></li>
-                                <li><Link to={'/this-week'}>
+                                <li><Link to={'/games-catalog/this-week'}>
                                     <div><img src={fireImage} alt="fire"/></div>
                                     This week</Link></li>
-                                <li><Link to={'/next-week'}>
+                                <li><Link to={'/games-catalog/next-week'}>
                                     <div><img src={nextImage} alt="next"/></div>
                                     Next week</Link></li>
-                                <li><Link to={'/video-game-releases'}>
+                                <li><Link to={'/games-catalog/video-game-releases'}>
                                     <div><p>31</p></div>
                                     Release calendar</Link></li>
                             </ul>
@@ -65,13 +65,13 @@ export default () => {
                         <div>Top</div>
                         <div className={s.sidebar_nav_sub_list}>
                             <ul>
-                                <li><Link to={'/best-of-the-year'}>
+                                <li><Link to={'/games-catalog/best-of-the-year'}>
                                     <div><img src={cupImage} alt="cup"/></div>
                                     Best of the year</Link></li>
-                                <li><Link to={'/popular-in-2020'}>
+                                <li><Link to={'/games-catalog/popular-in-2020'}>
                                     <div><img src={graphImage} alt="graph"/></div>
                                     Popular in 2020</Link></li>
-                                <li><Link to={'/all-time-top'}>
+                                <li><Link to={'/games-catalog/all-time-top'}>
                                     <div><img src={crownImage} alt="crown"/></div>
                                     All time top 250</Link></li>
                             </ul>
