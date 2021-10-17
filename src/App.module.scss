@@ -3,10 +3,12 @@
 
 .app {
   min-height: $page-height;
+  height: 100%;
 }
 
 .content {
   width: 100%;
-  height: $content-height;
+  min-height: $content-height;
+  height: 100%;
   display: flex;
 }

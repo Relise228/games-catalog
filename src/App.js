@@ -8,6 +8,7 @@ import Header from "./app/components/Header";
 import Sidebar from "./app/components/Sidebar";
 import {Route, Switch} from "react-router-dom";
 import MainContent from "./app/components/MainContent";
+import Wrapper from "./app/components/Wrapper";
 
 function App() {
     const dispatch = useDispatch();
@@ -25,7 +26,7 @@ function App() {
     useEffect(() => {
         let interval = undefined;
         if (all_games.length > 0) {
-            if(!sliderGame) setSliderGame(all_games[0])
+            if (!sliderGame) setSliderGame(all_games[0])
             interval = setInterval(() => {
                 if (num + 1 > all_games.length - 1) {
                     setNum(0)
@@ -49,13 +50,15 @@ function App() {
             backgroundColor: '#fff',
             color: '#000'
         }} className={s.app}>
-            <Header/>
-            <div className={s.content}>
-                <Sidebar/>
-                <Switch>
-                    <Route path={'/'} render={() => <MainContent sliderGame={sliderGame} setNum={setNum}/>} />
-                </Switch>
-            </div>
+            <Wrapper>
+                <Header/>
+                <div className={s.content}>
+                    <Sidebar/>
+                    <Switch>
+                        <Route path={'/'} render={() => <MainContent sliderGame={sliderGame} setNum={setNum}/>}/>
+                    </Switch>
+                </div>
+            </Wrapper>
         </div>
     );
 }
